@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<div>
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <div class="error" id="firstNameError"></div>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <div class="error" id="lastNameError"></div>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error" id="emailError"></div>
+
+        <label for="queryType">Query Type:</label>
+        <div class="box">
+            <input type="radio" id="generalEnquiry" name="queryType" value="General Enquiry" required>
+            <label for="generalEnquiry">General Enquiry</label>
+        </div>
+      
+        <div class="box">
+            <input type="radio" id="supportRequest" name="queryType" value="Support Request" required>
+            <label for="supportRequest">Support Request</label>
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="error" id="messageError"></div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I consent to being contacted by the team</label>
+            <!-- <span class="small-text">*To submit this form, please consent to being contacted</span> -->
+        </div>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/bhushu0910">Bhushan A. Chaudhari</a>.
+  </div>
+</div>
+</body>
+</html>
